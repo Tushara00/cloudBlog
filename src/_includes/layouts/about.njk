@@ -34,4 +34,12 @@ layout: 'base.njk'
             </section>
 
     {% endblock %}
+    
+ <script>
+const bar = document.querySelector(".bar");
+const menu = document.querySelector(".menu");
 
+bar.addEventListener("click", function(){
+menu.classList.toggle ("menu-active");
+})
+</script>
