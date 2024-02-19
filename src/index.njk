@@ -1,0 +1,102 @@
+---
+title: example
+layout: 'base.njk'
+---
+
+   
+  
+<!--hero-banner -->
+<section class="" alt="bg-image" style="heigh:680px;background:white;
+background: linear-gradient(87deg, rgba(0, 174, 239, .1) 0%, rgba(255,255,255,1)  48%);padding-bottom: 10rem 0">
+<div class="hero-container" style="position: relative;display:flex; max-width:1140px;width:100%;margin: 0 auto; background-colr: aqua; flex-wrap: wrap;;">
+    <div class="left-hero" style="width:50%">
+        <div class="hero-texts" style="padding-top:3rem;padding-left:2rem">
+<h1 class>Welcome to Cloudhacks</h1>
+<p class="banner-des">lorem15 lorem lorem lore mlore loree lorem15 lorem lorem lore mlore loree lorem15 lorem lorem lore mlore loree lorem15 lorem lorem lore mlore loree
+</p>
+<div class="button">
+    <button style=""><a href="http://localhost:8080/allBlog/"><i class="fa-solid fa-arrow-up-right-from-square"></i><span style="margin-left:.5rem;">All Posts</span></a></button>
+    <button style=""><a href="#featured"><i class="fa-solid fa-arrow-up-right-from-square"></i><span style="margin-left:.5rem">Featured Posts</span></a></button>
+</div>
+</div>
+    </div>
+    <div class="right-hero" style="width:50%">
+        <div class="hero-image" style="width:100%">
+<img src="assets/images/banner.png">
+</div>
+    </div>
+   
+</div>
+</div>
+</section>
+<!--hero-banner end -->
+
+<!--Latest post start -->
+
+<section style="background-color: white;">  
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">
+        <div style="position:relative;padding-left:1rem;display:flex;justify-content:space-between;align-items:center" class="title-verticel">
+        <h2 class="" style="line-height: 25px;   margin-left:.8rem;">Latest Posts</h2> 
+        <div style="margin-right:3rem">
+         <div><a href= "http://localhost:8080/allBlog/" style="font-size:16px;">See All post</div>
+          <div style="right:3rem;position:absolute;bottom:-16px"><i class="fa-solid fa-arrow-right-long" style="color:blue"></i></a></div>
+        </div> 
+        </div>
+      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
+
+
+{%-for post in collections.latest | reverse  -%}
+       {% include 'article-snippet.njk' %}
+        {%- endfor %}  
+    </div> 
+    </div>
+</section>
+<!--Latest post end -->
+<!--Featured posts-->
+
+<section style="background-color: white;" id="featured">  
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">
+        <div style="position:relative;padding-left:1rem" class="title-verticel"><span ></span><h2 class="" style="line-height: 25px;   margin-left:.8rem;">Featured Posts</h2></div>
+      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
+
+
+{%-for post in collections.featured | reverse  -%}
+       {% include 'article-snippet.njk' %}
+        {%- endfor %}  
+ 
+    </div> 
+    </div>
+</section>
+   
+<section style="max-width:1140px; background-color:white;margin: 2rem auto;padding-bottom:2rem;">
+   <div id="mc_embed_shell"; style="margin: auto;">
+<div id="mc_embed_signup" style="margin: auto;">
+    <form action="https://gmail.us21.list-manage.com/subscribe/post?u=0228dde712aaac9501ded753c&amp;id=70d1d0a35f&amp;f_id=00cbfbe6f0" method="post" id="mc-embedded-subscribe-form" style="margin: auto;" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <div id="mc_embed_signup_scroll"><h2 style="text-align:center">Subscribe to CloudHacks Newsletter</h2>
+           
+            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+        <div id="mce-responses" class="clear foot">
+            <div class="response" id="mce-error-response" style="display: none;"></div>
+            <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div>
+    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+        <input type="text" name="b_0228dde712aaac9501ded753c_70d1d0a35f" tabindex="-1" value="">
+    </div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"  style= "text-align:center" value="Subscribe">              
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</section>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+
+
+
+    <script src="assets/main.js">
+
+    </script>
+

@@ -1,0 +1,13 @@
+:root{
+--mute-text-color:#64748b;
+--border-color:rgba(71,85,105,.1);
+--bg-color:#F2F6FA;
+--p-color:#334155;
+
+/*typography*/
+--p-line-height:28px;
+--p-font-size:18px;
+--mute-font-size:14px;
+--mute-line-height:14px;
+rgb(248 250 252)
+}

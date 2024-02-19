@@ -1,0 +1,21 @@
+--- 
+layout: 'base.njk'
+---
+
+
+     <div class="single-blog" style="max-width:980px; width:100%;margin:auto;background-color:white;padding:2rem 4rem;">
+        <h2 class="cat-name">Business, Travel  <span class="date"> - {{date | postDate}}</span></h2>
+        <h1 class="blog-title">{{title}}</h1>
+        <div class="blog-img-box" style="">
+<img src="{{image}}">
+</div>
+{{ content | safe }}
+    </div>
+
+    <footer>
+
+    </footer>
+    <script src="assets/main.js">
+
+    </script>
+<script id="dsq-count-scr" src="//cloudhacks-2.disqus.com/count.js" async></script>

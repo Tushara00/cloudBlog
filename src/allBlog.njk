@@ -1,0 +1,39 @@
+---
+title: example
+layout: 'base.njk'
+---
+  <h2 style="max-width:1140px; width:100%; margin:auto; text-align:center;padding-top: 3rem;">All post By Category</h2>
+<section style="background-color: white;">  
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">  
+        <div style="position:relative;padding-left:1rem" class="title-verticel"><span ></span><h2 class="" style="line-height: 25px;   margin-left:.8rem;">Cloud Computing</h2></div>
+      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
+        {%-for post in collections.cloudComputing | reverse -%}
+       {% include 'article-snippet.njk' %}
+        {%- endfor %} 
+ </div> 
+    </div>
+</section>
+
+<section style="background-color: white;">  
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">
+   
+        <div style="position:relative;padding-left:1rem" class="title-verticel"><span ></span><h2 class="" style="line-height: 25px;   margin-left:.8rem;">AI/MI</h2></div>
+      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
+        {%-for post in collections.AIMI -%}
+       {% include 'article-snippet.njk' %}
+        {%- endfor %} 
+ </div> 
+    </div>
+</section>
+
+<section style="background-color: white;">  
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">
+        <div style="position:relative;padding-left:1rem" class="title-verticel"><span ></span><h2 class="" style="line-height: 25px;   margin-left:.8rem;">Cloud Security</h2></div>
+      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
+        {%-for post in collections.cloudSecurity -%}
+       {% include 'article-snippet.njk' %}
+        {%- endfor %} 
+ </div> 
+    </div>
+</section>
+
