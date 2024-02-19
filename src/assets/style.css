@@ -241,12 +241,7 @@ background-color: aquamarine;
     box-shadow: 0 0 40px rgba(97,208,215,.5),
  0 0 40px rgba(97, 207, 215, 0.089);;
 }
-.drop-down-li p{
-    color:var(--mute-text-color);
-    font-size: .875rem;
-    line-height: 1.25rem;
 
-}
 
 input[type=email]{
     width:100%;
@@ -327,6 +322,12 @@ border-bottom: 2px solid #00aeef;
             background-color:white!important;
             padding-top:2rem;
             padding-bottom:5rem;
+     }
+     .hero-container{
+        padding: 2rem 0 !important;
+     }
+     .right-hero{
+        text-align:"center !important";
      }
     .left-hero{
         padding-bottom:3rem!important;
