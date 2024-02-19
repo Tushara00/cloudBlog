@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" id="fullBody">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="icon" type="image/x-icon" href="/assets/images/cloudHacks-01.jpg">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/root.css">
+    <title>{{title}}</title>
+    <style>
+        .contact-container {
+  display: flex;
+  width: 980px;
+  max-width: 100%;
+  background-color: aqua;
+  
+
+}
+
+.left-content {
+  width: 100%;
+  border: 2px solid re;
+  padding: 2rem;
+  border: 2px solid re;
+
+}
+input,
+textarea {
+  width: 100%;
+
+}
+    </style>
+</head>
+<body>
+
+<main>
+
+    <section class="contact-section" id="contact" >
+        <h1 style="text-align: center; font-size: 38px;padding-top:1rem">Contact Us</h1>
+        <div class="contact-container">
+          <div class="left-content">
+            <p style="padding-bottom:1rem;;">Use the form below to send us a message</p>
+            <form action="https://formspree.io/f/mdoqayab" method="POST">
+              <div>
+                <input type="text" placeholder="name" name="name" value="">
+              </div>
+              <div>
+                <input type="email" placeholder="email" name="email" value="">
+              </div>
+              <div>
+                <input type="text" placeholder="subject" name="subject" value="">
+              </div>
+              <div>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Message"></textarea>
+              </div>
+              <div>
+                <input type="submit" value="Submit" class="submit">
+              </div>
+            </form>
+          </div>
+    
+  </main>
+</body>
+</html>
