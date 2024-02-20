@@ -15,6 +15,7 @@ p{
 }
 img{
     max-width:100%;
+    
     object-fit: content;
 }
 .menu ul li a {
@@ -185,6 +186,7 @@ margin:.5rem 0;
     padding-top:1.5rem;
 }
 .blog img{
+    height:250px;
     border-radius: 10px;
     width:100%;
 }
