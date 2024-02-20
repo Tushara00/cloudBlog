@@ -475,8 +475,8 @@ font-size: 21px;
    .right-hero{
     width:100% !important;
    }
-    .logo{
-        width:25%
+    .logo img{
+       height:60px!important;
     }
     .image-box{
         width:100%!important;
