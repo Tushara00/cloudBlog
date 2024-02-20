@@ -2,7 +2,7 @@
 title: My First Article
 author: Kevin Powell
 date: 2024-02-15
-tags: ["post", "featured", 'latest', 'cloudComputing']
+tags: ["post", "featured", 'latest', 'cloudComputing', 'popular']
 categories: Cloud Computing
 image: /assets/images/blog/blog.jpg
 imageAlt: This is a test

@@ -2,7 +2,7 @@
 title: My Second Article
 author: Kevin Powell
 date: 2024-02-15
-tags: ["post",'latest','AIMI']
+tags: ["post",'latest','AIMI','popular']
 categories: AI/MI
 image: /assets/images/blog/blog.jpg
 imageAlt: This is a test

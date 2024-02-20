@@ -2,7 +2,7 @@
 title: My Fifth Article
 author: Kevin Powell
 date: 2024-02-15
-tags: ["post", "featured","cloudSecurity"]
+tags: ["post", "featured","cloudSecurity",'pupolar']
 image: /assets/images/blog/blog.jpg
 categories: Cloud Security
 imageAlt: This is a test

@@ -11,8 +11,67 @@ layout: 'base.njk'
 </div>
 {{ content | safe }}
     </div>
+
+
+  <section>
+   <div style="width:100%;>
+    <div style="position:relative;padding-left:1rem" class="title-verticel"><span ></span><h2 class="" style="line-height: 25px; padding-bottom: 1rem;  margin-left:.8rem;">Popular Posts</h2></div>
+    <div class="slider" style="max-width:100%; padding: 2rem 0;overflow: hidden;background-color:white">
+    
+    {%-for post in collections.popular | reverse  -%}
+    <div style="">
+      <div class="Image-box">
+        <img src="{{post.data.image}}">
+      </div>
+      <div style="">
+     <h2 class="cat-name"><h2 class="cat-name">{{post.data.categories}} -
+        <span class="date">{{post.data.date | postDate}}</span></h2>
+        <h1 class="blog-title"><a href="{{ post.url }}">{{post.data.title}}</a></h1>     
+        </div>
+      </div>
+ {%- endfor %} 
  
-  
+     
+      
+    </div>
+  </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        arrows: true,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 2,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              //centerPadding: '40px',
+              slidesToShow: 1,
+              dots: true,
+            }
+          }
+        ]
+      });
+    });
+  </script>
 <script>
 const bar = document.querySelector(".bar");
 const menu = document.querySelector(".menu");
