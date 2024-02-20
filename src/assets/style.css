@@ -169,8 +169,12 @@ margin:.5rem 0;
     margin-left:.3rem;
     transition: all .5s ease-in-out;
 }
+.blog-img-box{
+    height:350px;
+}
 .blog{
     width:calc(100%/3 - 1rem);
+    
     border:1px solid rgba(185, 172, 172, 0.144);
     border-radius: 10px;;
     background-color: white;
