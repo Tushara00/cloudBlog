@@ -1,9 +1,10 @@
 --- 
+title: 'blog'
 layout: 'base.njk'
 ---
 
 
-     <div class="single-blog" style="max-width:980px; width:100%;margin:auto;background-color:white;padding:2rem 4rem;">
+     <div class="single-blog">
         <h2 class="cat-name">Business, Travel  <span class="date"> - {{date | postDate}}</span></h2>
         <h1 class="blog-title">{{title}}</h1>
         <div class="blog-img-box" style="">
@@ -13,9 +14,8 @@ layout: 'base.njk'
     </div>
 
   <!--newletter-->
-<section style="max-width:1140px; background-color:white;margin: 2rem auto;padding-bottom:2rem;width:100%;margin-bottom:3rem;padding-top:3rem">
-    <div id="" style="margin: auto;max-width:680px;width:100%;">
-          
+<section id= "mChimp">
+    <div id="" style="margin: auto;max-width:680px;width:100%;">       
     <div id="" ; style="margin:auto">   
         <form action="https://cloudhacks.us6.list-manage.com/subscribe/post?u=5d6f1a3f7641ffcd0ca3fb79a&amp;id=8b4e2da123&amp;f_id=00f43be3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
           <div id="" style=""><h2 style="text-align:center;padding-bottom:1rem;">Subscribe to CloudHacks Newsletter</h2></div>
@@ -45,7 +45,7 @@ layout: 'base.njk'
   <section class="popular-slider">
    <div style="width:100%;>
     <div style="position:relative;padding-left:1rem" class="title-verticel"><span ></span><h2 class="" style="line-height: 25px; padding-bottom: 1rem;  margin-left:.8rem;">Popular Posts</h2></div>
-    <div class="slider" style="max-width:100%; padding: 2rem 0;overflow: hidden;background-color:white">
+    <div class="slider">
     
     {%-for post in collections.popular | reverse  -%}
     <div style="">

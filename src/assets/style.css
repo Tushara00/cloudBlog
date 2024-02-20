@@ -194,6 +194,10 @@ main {
     margin-left: .3rem;
     transition: all .5s ease-in-out;
 }
+
+.all-blog-title h2{
+    max-width:1140px; width:100%; margin:auto; text-align:center;padding: 5rem 0 2rem;
+}
 .subscribe-btn{
     text-align:center
 }
@@ -230,7 +234,9 @@ main {
 
 .blogs-box {
     padding-top: 1.5rem;
-    display:flex;gap:1rem;flex-wrap: wrap;
+    display:flex;
+    gap:1rem;
+    flex-wrap: wrap;
 }
 
 .blog img {
@@ -286,6 +292,10 @@ main {
 
 
 /*start mailchimp*/
+
+#mChimp{
+    max-width:1140px; background-color:white;margin: 2rem auto;padding-bottom:2rem;width:100%;margin-bottom:3rem;padding-top:3rem
+}
 input[type=email] {
     width: 100%;
     padding: .3rem 0;
@@ -355,6 +365,9 @@ label {
 }
 
 /* single-blog-page*/
+.single-blog{
+    max-width:980px; width:100%;margin:auto;background-color:white;padding:2rem 4rem; 
+}
 .single-blog img {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -398,7 +411,9 @@ footer h2 {
 
 
 /* start slider*/
-
+.slider{
+    max-width:100%; padding: 2rem 0;overflow: hidden;background-color:white  
+}
 .popular-slider {
     padding-bottom: 1rem !important;
 }

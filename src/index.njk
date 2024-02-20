@@ -3,37 +3,36 @@ title: CloudBlog
 layout: 'base.njk'
 ---
 
-   
-  
+    
 <!--hero-banner -->
 <section class="hero-banner" >
 <div class="hero-container">
     <div class="left-hero" style="width:50%">
-        <div class="hero-texts" style="padding-top:3rem;padding-left:1rem;padding-right:1rem;">
+        <div class="hero-texts">
 <h1 class>Welcome to Cloudhacks</h1>
 <p class="banner-des">CloudHacks is your go-to resource for expert insights on cloud computing, artificial intelligence, and machine learning. Explore automation, security, and infrastructure topics, along with practical how-to guides. Stay informed and level up your tech knowledge with cloudHacks! 🌟🚀
 </p>
+
 <div class="button">
 <button style="margin-bottom: 1rem"><a href="#featured"><i class="fa-solid fa-arrow-up-right-from-square"></i><span style="margin-left:.5rem">Featured Posts</span></a></button>
-    <button style=""><a href="/allBlog/"><i class="fa-solid fa-arrow-up-right-from-square"></i><span style="margin-left:.5rem;">All Posts</span></a></button>
-    
+    <button style=""><a href="/allBlog/"><i class="fa-solid fa-arrow-up-right-from-square"></i><span style="margin-left:.5rem;">All Posts</span></a></button>   
 </div>
 </div>
     </div>
+
     <div class="right-hero" style="width:50%">
         <div class="hero-image" style="width:100%">
 <img src="assets/images/banner.png">
 </div>
-    </div>
-   
+    </div>  
 </div>
 </div>
 </section>
 <!--hero-banner end -->
 
 <div class="subscribe-btn" style="text-align:center"><button><a href="#mChimp">Subscribe</a></button></div>
-<!--Latest post start -->
 
+<!--Latest post start -->
 <section style="background-color: white;">  
     <div class="blogs-container">
         <div style="position:relative;padding-left:1rem;display:flex;justify-content:space-between;align-items:center" class="title-verticel">
@@ -43,37 +42,34 @@ layout: 'base.njk'
           <div style="right:3rem;position:absolute;bottom:-16px"><i class="fa-solid fa-arrow-right-long" style="color:blue"></i></a></div>
         </div> 
         </div>
-      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
 
-
+      <div class="blogs-box"> 
 {%-for post in collections.latest | reverse  -%}
        {% include 'article-snippet.njk' %}
-        {%- endfor %}  
+        {%- endfor %} 
+
     </div> 
     </div>
 </section>
 <!--Latest post end -->
-<!--Featured posts-->
 
+<!--Featured posts-->
 <section style="background-color: white;" id="featured">  
     <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">
         <div style="position:relative;padding-left:1rem" class="title-verticel"><span ></span>
         <h2>Featured Posts</h2></div>
-      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
-
-
+      <div class="blogs-box" > 
 {%-for post in collections.featured | reverse  -%}
        {% include 'article-snippet.njk' %}
         {%- endfor %}  
- 
     </div> 
     </div>
 </section>
+
   <!--mailchimp--> 
-<section id= "mChimp" style="max-width:1140px; background-color:white;margin: 2rem auto;padding-bottom:2rem;width:100%;margin-bottom:3rem;padding-top:3rem">
-  <div id="" style="margin: auto;max-width:680px;width:100%;">
-        
-  <div id="" ; style="margin:auto">   
+<section id= "mChimp">
+  <div style="margin: auto;max-width:680px;width:100%;">        
+  <div style="margin:auto">   
       <form action="https://cloudhacks.us6.list-manage.com/subscribe/post?u=5d6f1a3f7641ffcd0ca3fb79a&amp;id=8b4e2da123&amp;f_id=00f43be3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
         <div id="" style=""><h2 style="text-align:center;padding-bottom:1rem;">Subscribe to CloudHacks Newsletter</h2></div>
           <div id="mc_embed_signup_scroll">
@@ -98,6 +94,7 @@ layout: 'base.njk'
   </form>
   </div>
   </section>
+
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </div>
     <!--mailchimp--> 
