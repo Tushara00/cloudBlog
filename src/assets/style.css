@@ -170,7 +170,7 @@ margin:.5rem 0;
     transition: all .5s ease-in-out;
 }
 .blog-img-box{
-    height:350px;
+  
 }
 .blog{
     width:calc(100%/3 - 1rem);
