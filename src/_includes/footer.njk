@@ -7,10 +7,17 @@
     <a href=""><i class="fa-brands fa-x-twitter"></i></a>
     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
     </div>
-    <p>Copyright ©2024 All rights reserved to CloudHacks</p>
+    <p>Copyright ©<span id="getYear"></span> All rights reserved to CloudHacks</p>
     <div class="footer-page">
     <a href="">Terms & Conditions</a> /
       <a href="">Privacy Policy</a
       </div>
 </div>
 </footer>
+
+<script>
+const getYear = document.getElementById("getYear");
+  const d = new Date();
+    let year = d.getFullYear();
+    const gh = getYear.innerHTML = year;
+</script>
