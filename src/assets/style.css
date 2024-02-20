@@ -399,6 +399,9 @@ border-bottom: 2px solid #00aeef;
 
 
 @media only screen and (max-width:800px){
+    .hero-texts h1{
+        font-size: 28px !important;
+    }
     .hero-texts{
         padding-top:2rem !important;
     }
