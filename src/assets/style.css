@@ -255,7 +255,8 @@ background-color: aquamarine;
 input[type=email]{
     width:100%;
     padding:.3rem 0;
-    border-color:#ABB0B2;
+ border-radius:5px;
+    border:1px solid #ABB0B2
 }
 
 input[type=submit]{
