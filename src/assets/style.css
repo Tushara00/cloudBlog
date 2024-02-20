@@ -1,7 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Lato:wght@400;700&display=swap');
 
-*{
+*,html,bodyg{
+    scroll-margin-top: 6rem;
     scroll-behavior: smooth;  
 font-family: 'Heebo', sans-serif;
     margin:0;
@@ -124,19 +125,17 @@ align-items: center;
     display:block !important;
 }
 .logo{
-    background-colo: red;
+   
  max-width:170px;
 }
 .logo img{
-    background-colo: rgb(0, 255, 179);
+   
     max-width:100%;
 height:100px;
 }
 .bg{
     background-image: url("images/pattern.jpg");
-
-    width:100%;
-    
+    width:100%;   
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,9 +175,25 @@ margin:.5rem 0;
     margin-left:.3rem;
     transition: all .5s ease-in-out;
 }
-.blog-img-box{
-  
+.subscribe-btn button a{
+    font-size:18px;
+    color:white;
+   
 }
+.subscribe-btn button{
+    padding:10px 35px;
+    background-color: #111111; 
+    border-radius:5px;
+}
+.subscribe-btn button:hover{
+    background-color: transparent; 
+    border:1px solid grey;
+}
+.subscribe-btn button:hover a{
+    color:black;
+    
+}
+
 .blog{
     width:calc(100%/3 - 1rem);
     
