@@ -10,6 +10,8 @@
      <!--mailchimp-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
        <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css" />
   <!--<link rel="stylesheetgit" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />-->
   <link rel="stylesheet" href="/assets/slick/slick-theme2.css">
@@ -27,5 +29,17 @@
     {% include 'footer.njk' %}
   </main>
   
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
 </body>
 </html>

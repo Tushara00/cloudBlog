@@ -1,9 +1,9 @@
 ---
 title: My First Article
-author: Kevin Powell
+author: Mr. X
 date: 2024-02-15
 tags: ["post", "featured", 'latest', 'cloudComputing', 'popular']
-categories: Cloud Computing
+category: Cloud Computing
 image: /assets/images/blog/blog.jpg
 imageAlt: This is a test
 description: my first Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, 

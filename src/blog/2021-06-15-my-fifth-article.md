@@ -1,10 +1,10 @@
 ---
 title: My Fifth Article
-author: Kevin Powell
+author: Mr. X
 date: 2024-02-15
 tags: ["post", "featured","cloudSecurity",'pupolar']
 image: /assets/images/blog/blog.jpg
-categories: Cloud Security
+category: Cloud Security
 imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, 
 ---

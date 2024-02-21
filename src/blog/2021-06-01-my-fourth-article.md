@@ -1,10 +1,10 @@
 ---
 title: My Fourth Article
-author: Kevin Powell
+author: Mr. Xl
 date: 2024-02-15
 image: /assets/images/blog/blog.jpg
 tags: ['cloudComputing','popular']
-categories: Cloud Computing
+category: Cloud Computing
 imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, 
 ---

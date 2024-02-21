@@ -1,9 +1,9 @@
 ---
 title: My Second Article
-author: Kevin Powell
+author: Mr. X
 date: 2024-02-15
 tags: ["post",'latest','AIMI','popular']
-categories: AI/MI
+category: AI/MI
 image: /assets/images/blog/blog.jpg
 imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat,
