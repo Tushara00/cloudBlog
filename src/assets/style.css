@@ -479,7 +479,11 @@ footer h2 {
         font-size: 28px !important;
     }
 .blog-img-box{
-    width:50%!important;
+    flex-basis:50%!important;
+    flex-shrink:1;
+}
+.blog-title a {
+    line-height:35px
 }
     .hero-texts {
         padding-top: 2rem !important;
@@ -513,7 +517,8 @@ footer h2 {
         gap:1rem!important;
     }
     .blog-title a{
-        font-size:18px !important'
+        font-size:18px !important;
+        line-height: 28px !important;
     }
 .blog img{
     height:50px!important;
