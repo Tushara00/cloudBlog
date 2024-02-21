@@ -25,6 +25,6 @@ collections:
     create: true
     slug: '{{slug}}' # Optional: Customize the URL slug
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' } # Example field
+      - { label: 'Description', name: 'description', widget: 'string' } # Example field
       - { label: 'Content', name: 'body', widget: 'markdown' } 
       - { label: "Featured Image", name: "image", widget: "image" }   
