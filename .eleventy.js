@@ -1,5 +1,4 @@
 
-
 const { DateTime } = require("luxon");
 module.exports = function(eleventyConfig) {
   
@@ -10,8 +9,6 @@ module.exports = function(eleventyConfig) {
       return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
 
-  
-  
     // Return your Object options:
     return {
       dir: {
