@@ -1,11 +1,14 @@
- <div class="blog">
-    <div class="blog-img-box" style="">
-        <img src="{{post.data.image}}" alt="{{post.data.imageAlt}}">
+
+        <div class="blog" style="display:flex; width:100%; gap:3rem; padding-top:1rem;">
+    <div class="blog-img-box" style="width:40%;">
+        <img  style="height:200px;" src="{{post.data.image}}" alt="This is a test">
         </div>
-        <h2 class="cat-name"><h2 class="cat-name">{{ post.data.category}}
+        <div>
+        <h2 class="cat-name" style="font-size: 14px;line-height:10px;color:rgb(0, 59, 92);padding:0 0 .5rem;">{{ post.data.category}}
         <span class="date"> - {{post.date | postDate}}</span></h2>
-        <h1 class="blog-title"><a href="{{ post.url }}">{{post.data.title}}</a></h1>
-        <p class="description">{{ post.data.description }}</p>
-        <button style=""><a href="{{ post.url }}">Continue reading<i class="fa-solid fa-arrow-right-long"></i></a></button>    
-      
-        </div>
+        <h1 class="blog-title" style="padding-bottom:.4rem;"><a style="font-size: 28px; color: 
+          rgb(0, 134, 191);line-height:35px; font-weight:200" href="/blog/2021-05-28-my-third-article/">My Third Article Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum pariatur nobis vitae incidunt dolores eos.</a></h1>
+        <p class="description" style="font-size: 20px;line-height:30px;">{{ post.data.description }}</p>
+        <button style=""><a  style= "font-weight: 400px; " href="/blog/2021-05-28-my-third-article/">Continue reading<i class="fa-solid fa-arrow-right-long"></i></a></button>         
+        </div> 
+      </div>

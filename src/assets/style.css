@@ -478,7 +478,9 @@ footer h2 {
     .hero-texts h1 {
         font-size: 28px !important;
     }
-
+.blog-img-box{
+    width:50%!important;
+}
     .hero-texts {
         padding-top: 2rem !important;
     }
@@ -507,7 +509,9 @@ footer h2 {
     .blogs-box {
         gap: 0 !important;
     }
-
+.blog img{
+    height:100px!important;
+}
     .right-hero {
         text-align: center !important;
         width: 100% !important;
