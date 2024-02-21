@@ -368,6 +368,10 @@ label {
 .single-blog{
     max-width:980px; width:100%;margin:auto;background-color:white;padding:4rem 4rem; 
 }
+
+.single-blog h1{
+    font-size:28px !important;
+}
 .single-blog img {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -419,6 +423,9 @@ footer h2 {
 }
 .popular-slider a {
     color:rgb(0, 134, 191);
+}
+.popular-slider h1 {
+    padding-right:1rem!important;
 }
 .popular-slider h2{
     color:rgb(0, 59, 92);
