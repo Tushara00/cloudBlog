@@ -483,7 +483,7 @@ footer h2 {
     flex-shrink:1;
 }
 .blog-title a {
-    line-height:35px
+   
 }
     .hero-texts {
         padding-top: 2rem !important;
@@ -520,7 +520,7 @@ footer h2 {
     }
 
     .blog p{
-        font-size: 16px !important;line-height:18px!important;
+        font-size: 16px !important;line-height:25px!important;
     }
     .blog-title a{
         font-size:18px !important;
