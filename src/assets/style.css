@@ -515,10 +515,16 @@ footer h2 {
     }
     .blog{
         gap:1rem!important;
+        padding-right:0!important;
+        padding-left:0!important;
+    }
+
+    .blog p{
+        font-size: 16px !important;line-height:18px!important;
     }
     .blog-title a{
         font-size:18px !important;
-        line-height: 28px !important;
+        line-height: 21px !important;
     }
 .blog img{
     height:50px!important;
