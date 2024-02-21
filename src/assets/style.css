@@ -509,8 +509,14 @@ footer h2 {
     .blogs-box {
         gap: 0 !important;
     }
+    .blog{
+        gap:1rem!important;
+    }
+    .blog-title a{
+        font-size:18px !important'
+    }
 .blog img{
-    height:100px!important;
+    height:50px!important;
 }
     .right-hero {
         text-align: center !important;
