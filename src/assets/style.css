@@ -495,8 +495,8 @@ footer h2 {
     flex-basis:50%!important;
     flex-shrink:1;
 }
-.blog-title a {
-   
+.blog-box{
+    height:50px!important;
 }
     .hero-texts {
         padding-top: 2rem !important;
