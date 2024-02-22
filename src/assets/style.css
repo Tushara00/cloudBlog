@@ -373,6 +373,9 @@ label {
     height:100%;
     width:100%;
 }
+.blog-img-box{
+    height:100%!important;
+}
 .single-blog h1{
     font-size:28px !important;
 }
