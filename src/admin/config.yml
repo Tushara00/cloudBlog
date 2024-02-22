@@ -26,4 +26,17 @@ collections:
     slug: '{{slug}}' # Optional: Customize the URL slug
     fields:
       - { label: 'Description', name: 'description', widget: 'string' } # Example field
-      - { label: "Featured Image", name: "image", widget: "image" }   
+      - { label: "Featured Image", name: "image", widget: "image" }  
+
+  - name: "banner"
+    label: "Banner"
+    files:
+      - file: "src/_data/banner.json"
+        label: "banner"
+        name: "banner"
+        extension: "json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - { label: 'bannertitle', name: 'bannertitle', widget: 'string' }

@@ -367,15 +367,12 @@ label {
 
 /* single-blog-page*/
 .single-blog{
-    max-width:980px; width:100%;margin:auto;background-color:white;padding:4rem 4rem; 
+    max-width:980px; width:100%;margin:auto;background-color:white;padding:5rem 4rem; 
 }
 .blog-img-box img{
-    height:100%;
-    width:100%;
+   
 }
-.blog-img-box{
-    height:100%!important;
-}
+
 .single-blog h1{
     font-size:28px !important;
 }
