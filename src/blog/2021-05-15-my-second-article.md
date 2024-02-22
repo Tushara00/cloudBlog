@@ -1,7 +1,7 @@
 ---
 author: Mr. X
 imageAlt: This is a test
-title: My Third Article change Lorem ipsum dolor sit amet consectetur
+title: My second Article change Lorem ipsum dolor sit amet consectetur
   adipisicing elit. pariatur nobis vitae incidunt dolores eos
 category: AI/MI
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
