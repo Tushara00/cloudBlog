@@ -496,7 +496,11 @@ footer h2 {
     flex-shrink:1;
 }
 .blog-box{
-    height:50px!important;
+    height:80px!important;
+    width:20%!important;
+}
+.blog-box-text{
+    width:76%!important;
 }
     .hero-texts {
         padding-top: 2rem !important;
