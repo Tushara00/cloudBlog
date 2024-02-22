@@ -1,6 +1,6 @@
 ---
 author: Mr. X
-imageAlt: This is a test
+imageAlt: This is a test image
 title: My second Article change Lorem ipsum dolor sit amet consectetur
   adipisicing elit. pariatur nobis vitae incidunt dolores eos
 category: AI/MI
