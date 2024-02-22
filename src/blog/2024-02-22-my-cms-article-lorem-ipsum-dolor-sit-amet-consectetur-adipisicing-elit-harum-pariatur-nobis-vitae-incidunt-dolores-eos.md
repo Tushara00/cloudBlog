@@ -1,7 +1,7 @@
 ---
 title: My cms Article Lorem ipsum dolor sit amet consectetur adipisicing elit.
   Harum pariatur nobis vitae incidunt dolores eos.
-category: Tech
+category: Cloud Computing
 description: description desction
 date: 2024-02-22T05:52:17.787Z
 tag:
