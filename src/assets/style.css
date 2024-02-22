@@ -369,7 +369,10 @@ label {
 .single-blog{
     max-width:980px; width:100%;margin:auto;background-color:white;padding:4rem 4rem; 
 }
-
+.blog-img-box img{
+    height:100%;
+    width:100%;
+}
 .single-blog h1{
     font-size:28px !important;
 }
@@ -426,7 +429,7 @@ footer h2 {
     color:rgb(0, 134, 191);
 }
 .popular-slider h1 {
-    padding-right:1rem!important;
+    padding-right:4rem;;
 }
 .popular-slider h2{
     color:rgb(0, 59, 92);
@@ -491,12 +494,9 @@ footer h2 {
     .hero-texts h1 {
         font-size: 28px !important;
     }
-.blog-img-box{
-    flex-basis:50%!important;
-    flex-shrink:1;
-}
+
 .blog-box{
-    height:80px!important;
+    height:70px!important;
     width:20%!important;
 }
 .blog-box-text{
@@ -578,7 +578,7 @@ footer h2 {
     .single-blog {
         padding: 2rem 1rem !important;
     }
-
+    
     .logo img {
         height: 60px !important;
     }
@@ -606,10 +606,9 @@ footer h2 {
         flex-direction: column;
     }
 
-    .singleDropdownMenu {
-        flex-basis: 100% !important;
+    .popular-slider h1 {
+        padding-right:1rem!important;
     }
-
 
     nav {
         flex-direction: column;
