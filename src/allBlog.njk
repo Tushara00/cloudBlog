@@ -1,0 +1,66 @@
+---
+title: cloudHacks
+layout: 'base.njk'
+---
+<!--start post by category-->
+<div style="width:1240px;max-width:100%;background-color:green">
+    <div style="float:right;padding-top:100px;">
+    <buutton>categories</buutton>
+  
+<!-- Example usage in your allblog.njk template -->
+
+  {% for category in cat.cat %}
+    <a href="#{{category}}">{{ category }}</a>
+  {% endfor %}
+
+
+{{cat.name}}
+
+  </div>
+  </div>
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;margin-top:200px"> 
+
+        <div style="position:relative;padding-left:1rem"  class="title-verticel"><span ></span><h2 class="" style="line-height: 25px;   margin-left:.8rem;">Cloud Computing</h2></div>
+      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
+        {%-for post in collections.cloudComputing | reverse -%}
+       {% include 'article-snippet.njk' %}
+        {%- endfor %} 
+ </div> 
+    </div>
+</section>
+
+
+<!--start post by category-->
+<section style="background-color: white;margin-bottom:1rem; >  
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">
+      {%- for category in cat.cat -%}
+        <div style="position:relative;padding-left:1rem; "  class="title-verticel"><span ></span><h2 class="" style="line-height: 25px;   margin-left:.8rem;">{{category}}</h2></div>
+      
+      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;" id= {{category}}> 
+      
+    {%- for post in collections.all -%}
+
+    {%- if post.data.category === category -%}
+      {% include 'article-snippet.njk' %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+
+ </div> 
+    </div>
+</section>
+<section id="">
+<div><h2>Hello all</h2></div>
+</section>
+<!--end post by category-->
+
+<script>
+const bar = document.querySelector(".bar");
+const menu = document.querySelector(".menu");
+
+bar.addEventListener("click", function(){
+menu.classList.toggle ("menu-active");
+})
+</script>
+

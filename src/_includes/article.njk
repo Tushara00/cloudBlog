@@ -1,0 +1,115 @@
+--- 
+title: 'blog'
+layout: 'base.njk'
+---
+
+
+     <div class="single-blog">
+        <h2 class="cat-name">Business, Travel  <span class="date"> - {{date | postDate}}</span></h2>
+        <h1 style= "font-size:" class="">{{title}}</h1>
+        <div class="blog-img-box" style="width:100%; height:550px">
+<img src="{{image}}">
+</div>
+{{ content | safe }}
+    </div>
+
+  <!--newletter-->
+<section id= "mChimp">
+    <div id="" style="margin: auto;max-width:680px;width:100%;">       
+    <div id="" ; style="margin:auto">   
+        <form action="https://cloudhacks.us6.list-manage.com/subscribe/post?u=5d6f1a3f7641ffcd0ca3fb79a&amp;id=8b4e2da123&amp;f_id=00f43be3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <div id="" style=""><h2 style="text-align:center;padding-bottom:1rem;">Subscribe to CloudHacks Newsletter</h2></div>
+            <div id="mc_embed_signup_scroll">
+              
+              <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+          </div>
+  
+              <div class="mc-field-group">
+              <label for="mce-FNAME">Full Name <span class="asterisk">*</span></label><input type="text" name="FNAME" class="required text" id="mce-FNAME" required="" value="">
+          </div>
+  
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+            </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_5d6f1a3f7641ffcd0ca3fb79a_8b4e2da123" tabindex="-1" value=""></div><div class="clear">
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+          </div>
+        </div>
+    </form>
+    </div>
+    </section>
+
+  <section class="popular-slider">
+   <div style="width:100%;>
+    <div style="position:relative;padding-left:1rem" class="title-verticel"><span ></span><h2 class="" style="line-height: 25px; padding-bottom: 1rem;  margin-left:.8rem;">Popular Posts</h2></div>
+    <div class="slider">
+    
+    {%-for post in collections.popular | reverse  -%}
+    <div style="">
+      <div class="Image-box">
+        <img src="{{post.data.image}}">
+      </div>
+      <div class="popular-post">
+     <h2 class="cat-name">{{post.data.category}} -
+        <span class="date">{{post.data.date | postDate}}</span></h2>
+        <h1 style="font-size:18px;padding-right: 4rem;color:rgb(0, 134, 191)" class=""><a href="{{ post.url }}" >{{post.data.title}}</a></h1>     
+        </div>
+      </div>
+ {%- endfor %} 
+
+    </div>
+  </div>
+  </section>
+
+
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        arrows: true,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 2,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              //centerPadding: '40px',
+              slidesToShow: 1,
+              dots: true,
+            }
+          }
+        ]
+      });
+    });
+  </script>
+<script>
+const bar = document.querySelector(".bar");
+const menu = document.querySelector(".menu");
+
+bar.addEventListener("click", function(){
+menu.classList.toggle ("menu-active");
+})
+</script>

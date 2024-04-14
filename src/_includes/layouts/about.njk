@@ -1,0 +1,41 @@
+---
+title: example
+layout: 'base.njk'
+---
+
+            {% block content %}   
+        <section class="" alt="bg-image" style="heigh:680px;padding-bottom: 10rem 0">
+            <div class="hero-container" style="position: relative;display:flex;justify-content:space-between; max-width:1140px;width:100%;margin: 0 auto; background-color: white;background: linear-gradient(180deg, rgba(244,236,243,1) 0%, rgba(255,255,255,1) 48%); flex-wrap: wrap;padding: 2rem 6rem">
+                <div class="left-hero" style="width:calc(60% - 2rem);">
+                    <div class="about-text" style="padding-top:3rem;padding-left:1rem; padding-right:1rem;padding-bottom:2rem;">
+            <h1 class>About Author</h1>
+            <p style="line-height:28px;padding:1rem 0">{{description}}</p>
+             <div class="about">
+            <p style="color: grey;
+    font-size: 14px;">connect with author : 
+   <a href="{{iconFbUrl}}"><i class="{{iconFb}}"></i></a>
+    <a href="{{iconTwUrl}}"><i class="{{icontwitter}}"></i></a>
+    <a href="{{iconliUrl}}"><i class="{{iconLi}}"></i></a>
+    </div>
+            </p>
+            </div>
+                </div>
+                <div class="right-hero" style="width:width:calc(50% - 2rem);height:250px; >
+                    <div class="hero-image" style="width:100%">
+            <img src="{{image}}" style="height:100%">
+            </div>
+                </div>
+               
+            </div>
+            </div>
+            </section>
+    {% endblock %}
+    
+ <script>
+const bar = document.querySelector(".bar");
+const menu = document.querySelector(".menu");
+
+bar.addEventListener("click", function(){
+menu.classList.toggle ("menu-active");
+})
+</script>
