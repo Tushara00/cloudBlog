@@ -32,7 +32,7 @@ collections:
   - name: "Cats"
     label: "Cat Data"
     folder: "_data" # Path to the folder containing cat.json
-    create: false # Set to true if you want to allow creating new documents
+    create: true # Set to true if you want to allow creating new documents
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Categories", name: "cat", widget: "list", allow_add: true, allow_delete: true }
