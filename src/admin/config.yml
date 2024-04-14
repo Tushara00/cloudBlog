@@ -28,12 +28,13 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' } # Example field
       - { label: "Featured Image", name: "image", widget: "image" }   
 
-  - name: 'cat' # Collection name (you can customize this)
-    label: 'Cat' # Display label in CMS
-    folder: '_data/cat' # Path to your Markdown files
-    create: true
-    slug: '{{slug}}' # Optional: Customize the URL slug
+  
+  - name: "Cats"
+    label: "Cat Data"
+    folder: "_data" # Path to the folder containing cat.json
+    create: false # Set to true if you want to allow creating new documents
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Categories", name: "cat", widget: "list", allow_add: true, allow_delete: true } # Example field
+      - { label: "Categories", name: "cat", widget: "list", allow_add: true, allow_delete: true }
+# Example field
      
