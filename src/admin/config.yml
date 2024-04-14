@@ -34,5 +34,6 @@ collections:
     create: true
     slug: '{{slug}}' # Optional: Customize the URL slug
     fields:
-      - { label: 'Description', name: 'description', widget: 'string' } # Example field
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Categories", name: "cat", widget: "list", allow_add: true, allow_delete: true } # Example field
      
