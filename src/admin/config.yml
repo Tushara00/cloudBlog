@@ -36,6 +36,6 @@ collections:
     create: true # Set to true if you want to allow creating new documents
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Categories", name: "cat", widget: "list", allow_add: true, allow_delete: true }
+      - { label: "Categories", name: "cat", widget: "list"}
 # Example field
      
