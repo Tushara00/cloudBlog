@@ -17,3 +17,12 @@ body {
     display:block!important;
     padding-bottom:0!important
 }
+.float{
+    float:right;padding-top:100px; 
+}
+
+@media only screen and (max-width: 800px) {
+    .float {
+     float:none!important;
+    }
+  }
