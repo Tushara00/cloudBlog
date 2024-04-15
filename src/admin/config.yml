@@ -30,9 +30,9 @@ collections:
       - { label: "Categories", name: "cat", widget: "list" } 
 
   
-  - name: "Cats"
+  - name: "cat"
     label: "Cat Data"
-    folder: "src/_data/cat" # Path to the folder containing cat.json
+    folder: "src/_data" # Path to the folder containing cat.json
     create: true # Set to true if you want to allow creating new documents
     fields:
       - { label: "Name", name: "name", widget: "string" }
