@@ -1,0 +1,19 @@
+*,
+html,
+body {
+    scroll-margin-top: 9rem !important;
+   
+}
+#drop{
+    display:none;
+}
+/* Assuming this rule is in your stylesheet */
+.active {
+    display: block !important;
+   
+  }
+  
+.cat-drop ul li {
+    display:block!important;
+    padding-bottom:0!important
+}

@@ -1,42 +1,41 @@
 ---
 title: cloudHacks
-layout: 'base.njk'
+layout: 'allBlogBase.njk'
+
 ---
-<!--start post by category-->
-<div style="width:1240px;max-width:100%;background-color:green">
-    <div style="float:right;padding-top:100px;">
-    <buutton>categories</buutton>
-  
-<!-- Example usage in your allblog.njk template -->
 
+<!--start post by category-->
+<div class = "cat-drop" style="width:940px;max-width:100%;min-height:200px;margin: auto;transition: min-height 0.3s ease;">
+    <div style="float:right;padding-top:100px;right:">
+    <div style="background-color:rgb(0, 134, 191);position:relative;cursor:pointer ;padding:.5rem 1.5rem; font-size:18px;color:white;border-radius:7px" id="btn">Categories<i class="fa-solid fa-arrow-down" style="padding-left:1rem"></i></div>
+    <ul style="background-color: white; padding: 1rem;position:absolute" id="drop">
   {% for category in cat.cat %}
-    <a href="#{{category}}">{{ category }}</a>
-  {% endfor %}
+
+    {% set originalText = category %}
+   {% set removedSpacesText = originalText.split(" ").join("") %}
 
 
-{{cat.name}}
+    <li><a href="#{{ removedSpacesText }}">{{ originalText }}</a></li>
+  
+{% endfor %}
+</ul>
 
   </div>
   </div>
-    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;margin-top:200px"> 
+  
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;margin-top:200p"> 
 
-        <div style="position:relative;padding-left:1rem"  class="title-verticel"><span ></span><h2 class="" style="line-height: 25px;   margin-left:.8rem;">Cloud Computing</h2></div>
-      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;"> 
-        {%-for post in collections.cloudComputing | reverse -%}
-       {% include 'article-snippet.njk' %}
-        {%- endfor %} 
- </div> 
-    </div>
-</section>
 
 
 <!--start post by category-->
-<section style="background-color: white;margin-bottom:1rem; >  
-    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">
+
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto; scroll-margin-top: 10rem !important;">
       {%- for category in cat.cat -%}
-        <div style="position:relative;padding-left:1rem; "  class="title-verticel"><span ></span><h2 class="" style="line-height: 25px;   margin-left:.8rem;">{{category}}</h2></div>
+      {% set originalText = category %}
+   {% set removedSpacesText = originalText.split(" ").join("") %}
+        <div style="position:relative;padding-left:1rem;" id= {{removedSpacesText}}><span ></span><h2 style="line-height: 25px;   margin-left:.8rem;" >{{category}}</h2></div>
       
-      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;" id= {{category}}> 
+      <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;" > 
       
     {%- for post in collections.all -%}
 
@@ -49,18 +48,28 @@ layout: 'base.njk'
 
  </div> 
     </div>
-</section>
-<section id="">
-<div><h2>Hello all</h2></div>
-</section>
+
 <!--end post by category-->
 
 <script>
 const bar = document.querySelector(".bar");
 const menu = document.querySelector(".menu");
 
+
 bar.addEventListener("click", function(){
 menu.classList.toggle ("menu-active");
 })
+</script>
+
+<script>
+const btn = document.getElementById("btn");
+const drop = document.getElementById("drop");
+const catDrop = document.querySelector(".cat-drop");
+
+btn.addEventListener("click", function() {
+  drop.classList.toggle("active");
+ catDrop .style.minHeight= drop.classList.contains("active") ? "350px" : "200px";;
+});
+
 </script>
 

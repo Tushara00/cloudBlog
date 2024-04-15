@@ -9,7 +9,7 @@ cat:
   - "clm"
   - "cmk"
 
-category:  cat2
+category:  Cloud Security
 description: Uncover the mystery of DNS DOH DOT with our insightful guide on DNS
   over TLS and DNS over HTTPS. Explore more on our blog!
 date: 2024-03-20T10:44:55.625Z
