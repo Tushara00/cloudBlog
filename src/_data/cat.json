@@ -1,8 +1,8 @@
 {
-  
   "cat": [
     "cat1",
     "cat2",
-    "cat3"  
-  ]
+    "cat3"
+  ],
+  "description": "category"
 }
