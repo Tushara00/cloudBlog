@@ -24,5 +24,7 @@ body {
 @media only screen and (max-width: 800px) {
     .float {
      float:none!important;
+     width:60%!important;
+     margin:auto!important;
     }
   }
