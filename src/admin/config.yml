@@ -38,7 +38,7 @@ collections:
     create: true # Set to true if you want to allow creating new documents
     slug: '{{slug}}'
     fields:
-      
+      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: "Categories", name: "cat", widget: "list"}
 # Example field
      
