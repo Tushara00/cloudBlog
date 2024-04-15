@@ -21,7 +21,7 @@ collections:
     
   - name: 'about' # Collection name (you can customize this)
     label: 'About Page' # Display label in CMS
-    folder: 'src/about.md' # Path to your Markdown files
+    folder: 'src/about' # Path to your Markdown files
     create: true
     slug: '{{slug}}' # Optional: Customize the URL slug
     fields:
