@@ -1,7 +1,10 @@
 ---
 title: "Scaling Smarter, Not Harder: The Battle of Serverless and Microservices
   Architectures"
-category: cat1
+category:  
+  - car
+  - fashion
+  
 description: This article discusses microservices and serverless architecture,
   helping businesses to decide which of the two is the better option, depending
   on their business requirements.

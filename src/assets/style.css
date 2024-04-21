@@ -3,7 +3,7 @@
 *,
 html,
 body {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 8rem;
     scroll-behavior: smooth;
     font-family: 'Heebo', sans-serif;
     margin: 0;
@@ -11,7 +11,22 @@ body {
     box-sizing: border-box;
     list-style: none;
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c4c1c1; 
+  }
+  
+  /* Handle on hover */
+  
 p {
     font-size: 16px;
     line-height: 31px;
@@ -221,7 +236,7 @@ main {
 }
 
 .blogs-container{
-    max-width:1140px;width:100%;margin:0 auto;
+    max-width:1240px;width:100%;margin:0 auto;
 }
 .blog {
     
@@ -484,13 +499,75 @@ footer h2 {
 
 /* end slick slider*/
 
-
+.fields .field input{
+    display:block;
+    width:100%;
+    padding:5px;
+    margin-bottom:1rem;
+ }
+ .field select {
+     width:100%;
+     padding:5px;
+ }
+ .field-center{
+     padding: 15px 0rem;
+ }
+ .field-center input{
+ width:20px;
+ height:20px;
+ }
+ 
+ .field-center label{
+     font-size: 18px;
+     margin-left:5px;
+ }
+ .table-wrapper td {
+     border: solid 1px grey !important;
+     border-left: 0;
+     border-right: 0;
+     padding:5px;
+     word-wrap:break-word !important;
+ }
+ .content ul a{
+     text-decoration: underline;
+ }
+ .content ul {
+     padding-top:1rem;
+ }
+ .inner h2{
+     font-size:22px;
+     line-height:35px
+ }
+ .inner 
+     p {
+         font-size: 16px;
+         line-height: 25px;
+         margin:.5rem 0;
+       }
+ 
+       article{
+         margin-bottom:3rem;
+       }
+       #help ul li {
+         padding:.5rem !important;
+       }
 
 
 
 
 
 @media only screen and (max-width:800px) {
+
+    .content ul{
+        display:initial !important;
+    }
+    .blogs-box{
+        width:100% !important;
+    }
+    #wrapper{
+    width:100% !important;
+    max-width:100%;
+    }
     .hero-texts h1 {
         font-size: 28px !important;
     }

@@ -1,0 +1,6 @@
+const articles = [
+    { id: 1, name: 'ford', category: 'vehicle' },
+    { id: 2, name: 'pig', category: 'animal' },
+    { id: 2, name: 'pig', category: 'animal' },
+    // ... other articles
+  ];

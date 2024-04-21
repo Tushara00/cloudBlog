@@ -1,7 +1,9 @@
 ---
 title: "Cloud Security Posture Management (CSPM): Your Guide to Minimizing
   Information Security Risks and Maximizing Cloud Advantages in 2024"
-category: cat2
+category:  
+  - car
+  - fashion
 description: "Cloud Security Posture Management (CSPM): Your Guide to Minimizing
   Information Security Risks and Maximizing Cloud Advantages in 2024"
 date: 2024-02-15

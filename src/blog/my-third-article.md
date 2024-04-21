@@ -1,7 +1,9 @@
 ---
 title: "The Future of Cloud Computing: Is Function as a Service(FaaS) Right for
   Your Business?"
-category: cat3
+category:  
+  - car
+  - fashion
 description: "This blog post will dive into the pros and cons of both FaaS
   models, i.e., serverless and edge computing. "
 date: 2024-02-15

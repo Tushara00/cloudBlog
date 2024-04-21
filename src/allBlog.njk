@@ -11,30 +11,42 @@ layout: 'allBlogBase.njk'
     <ul style="background-color: white; padding: 1rem;position:absolute" id="drop">
   {% for category in cat.cat %}
 
-    {% set originalText = category %}
-   {% set removedSpacesText = originalText.split(" ").join("") %}
 
 
-    <li><a href="#{{ removedSpacesText }}">{{ originalText }}</a></li>
+
+
+
+
+
+
+
+
   
-{% endfor %}
+
 </ul>
-
   </div>
   </div>
-  
-    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;margin-top:200p"> 
 
-
-
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;"> 
 <!--start post by category-->
-
-    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto; scroll-margin-top: 10rem !important;">
+<section style="background-color: white;margin-bottom:1rem;width:100%">  
+    <div class="blogs-container"  style="max-width:1140px;width:100%;margin:0 auto;">
       {%- for category in cat.cat -%}
       {% set originalText = category %}
    {% set removedSpacesText = originalText.split(" ").join("") %}
+{%- endfor %}
+
+
+
+
+
+
+
+
+
+
         <div style="position:relative;padding-left:1rem;" id= {{removedSpacesText}}><span ></span><h2 style="line-height: 25px;   margin-left:.8rem;" >{{category}}</h2></div>
-      
+    
       <div class="blogs-box" style="display:flex;gap:1rem;flex-wrap: wrap;" > 
       
     {%- for post in collections.all -%}
@@ -47,8 +59,9 @@ layout: 'allBlogBase.njk'
 
 
  </div> 
-    </div>
 
+    </div>
+</section>
 <!--end post by category-->
 
 <script>

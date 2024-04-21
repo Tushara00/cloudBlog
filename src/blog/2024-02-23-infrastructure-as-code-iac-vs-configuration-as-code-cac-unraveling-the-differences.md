@@ -1,7 +1,7 @@
 ---
 title: "Infrastructure as Code (IaC) vs. Configuration as Code (CaC): Unraveling
   the Differences"
-category: Cloud Computing
+category: ca2
 description: "Infrastructure as Code (IaC) vs. Configuration as Code (CaC):
   Unraveling the Differences"
 date: 2024-02-23T10:26:36.758Z
