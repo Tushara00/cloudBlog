@@ -48,7 +48,7 @@ layout: 'base.njk'
 				  <div style="right:3rem;position:absolute;bottom:-16px"><i class="fa-solid fa-arrow-right-long" style="color:blue"></i></a></div>
 				</div> 
 				</div>
-				<div style="display: flex; flex-wrap: wrap;">
+				<div class= "blogs-section" style="display: flex; flex-wrap: wrap;">
 			  <div class="blogs-box" style="width:65%"> 
 				{%-for post in collections.latest | reverse  -%}
 				{% include 'article-snippet.njk' %}
@@ -192,7 +192,7 @@ layout: 'base.njk'
 		</section>
 		<!--end Featured posts-->
 
-		<div id="query" style="width:940px; max-width:100%;margin: 2rem auto">
+		<div id="query" style="width:940px; max-width:100%;margin: 2rem auto;border:1px solid rgba(185, 172, 172, 0.144);background-color: white;padding:2rem;border-radius: 5px;">
 
 			<!-- Help -->
 			<article id="help">

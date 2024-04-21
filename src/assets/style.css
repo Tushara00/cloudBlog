@@ -557,7 +557,9 @@ footer h2 {
 
 
 @media only screen and (max-width:800px) {
-
+    .blogs-section{
+        flex-direction: column-reverse !important;
+    }
     .content ul{
         display:initial !important;
     }
