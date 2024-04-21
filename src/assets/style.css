@@ -557,6 +557,12 @@ footer h2 {
 
 
 @media only screen and (max-width:800px) {
+    .inner h2{
+        font-size: 18px !important;
+    }
+    .title-verticel{
+        padding-bottom:2rem !important
+    }
     .blogs-section{
         flex-direction: column-reverse !important;
     }

@@ -1,6 +1,5 @@
 ---
-title: "Cloud Security Posture Management (CSPM): Your Guide to Minimizing
-  Information Security Risks and Maximizing Cloud Advantages in 2024"
+title: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
 category:  
   - car
   - fashion

@@ -1,6 +1,5 @@
 ---
-title: "Demystifying DNS over TLS (DoT) and DNS over HTTPS (DoH): What You Need
-  to Know"
+title: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
 cat:
   - "cls"
   - "cls"

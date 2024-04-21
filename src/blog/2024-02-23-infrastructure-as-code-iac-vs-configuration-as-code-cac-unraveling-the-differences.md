@@ -2,8 +2,7 @@
 title: "Infrastructure as Code (IaC) vs. Configuration as Code (CaC): Unraveling
   the Differences"
 category: ca2
-description: "Infrastructure as Code (IaC) vs. Configuration as Code (CaC):
-  Unraveling the Differences"
+description: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text "
 date: 2024-02-23T10:26:36.758Z
 tags:
   - post

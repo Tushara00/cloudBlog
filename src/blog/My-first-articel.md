@@ -1,6 +1,5 @@
 ---
-title: "Scaling Smarter, Not Harder: The Battle of Serverless and Microservices
-  Architectures"
+title: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text"
 category:  
   - car
   - fashion

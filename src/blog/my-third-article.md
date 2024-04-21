@@ -4,8 +4,7 @@ title: "The Future of Cloud Computing: Is Function as a Service(FaaS) Right for
 category:  
   - car
   - fashion
-description: "This blog post will dive into the pros and cons of both FaaS
-  models, i.e., serverless and edge computing. "
+description: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text "
 date: 2024-02-15
 tags:
   - post
